@@ -123,15 +123,15 @@
 
 - (void)contentViewTransFormHidden
 {
-    CGFloat height = _contentView.height;
-    CGFloat width = _contentView.width;
+    CGFloat height = CGRectGetHeight(_contentView.frame);
+    CGFloat width = CGRectGetWidth(_contentView.frame);
     CGFloat offsetx = 0;
     CGFloat offsety = 0;
     
     if (self.dockCenter)
     {
-        offsetx = self.width/2 - self.contentView.width/2;
-        offsety = self.height/2 - self.contentView.height/2;
+        offsetx = self.bounds.size.width/2 - self.contentView.bounds.size.width/2;
+        offsety = self.bounds.size.height/2 - self.contentView.bounds.size.height/2;
     }
 
     if (self.direction == PopViewFromDirection_up)
@@ -154,15 +154,15 @@
 
 - (void)contentViewTransFormShow
 {
-    CGFloat height = _contentView.height;
-    CGFloat width = _contentView.width;
+    CGFloat height = _contentView.bounds.size.height;
+    CGFloat width = _contentView.bounds.size.width;
     CGFloat offsetx = 0;
     CGFloat offsety = 0;
     
     if (self.dockCenter)
     {
-        offsetx = self.width/2 - self.contentView.width/2;
-        offsety = self.height/2 - self.contentView.height/2;
+        offsetx = self.bounds.size.width/2 - self.contentView.bounds.size.width/2;
+        offsety = self.bounds.size.height/2 - self.contentView.bounds.size.height/2;
     }
 
     if (self.direction == PopViewFromDirection_up)
@@ -188,8 +188,8 @@
 {
     CGFloat supHeight = self.superview.bounds.size.height;
     CGFloat supWidth = self.superview.bounds.size.width;
-    CGFloat height = _contentView.height;
-    CGFloat width = _contentView.width;
+    CGFloat height = _contentView.bounds.size.height;
+    CGFloat width = _contentView.bounds.size.width;
     
     if (self.direction == PopViewFromDirection_up)
     {
