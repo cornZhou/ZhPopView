@@ -16,14 +16,14 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZhPopView" #存储库名称
-  spec.version      = "0.0.1" #版本号，与tag值一致
+  spec.version      = "1.0.0" #版本号，与tag值一致
   spec.summary      = "ZhPopView summary: 不同弹框效果" #简介
   spec.description  = "ZhPopView description: 不同弹框效果" #描述
   spec.homepage     = "https://github.com/cornZhou/ZhPopView" #项目主页，不是git地址
   spec.license      = { :type => "MIT", :file => "LICENSE" } #开源协议
   spec.author             = { "ZhouHuan" => "1559960608@qq.com" } #作者
   spec.platform     = :ios #支持的平台和版本号
-  spec.source       = { :git => "https://github.com/cornZhou/ZhPopView.git", :tag => "0.0.1" } #存储库的git地址，以及tag值
+  spec.source       = { :git => "https://github.com/cornZhou/ZhPopView.git", :tag => "1.0.0" } #存储库的git地址，以及tag值
 
 
   # .podspec同级路径下的文件夹 xxx 可直接这样写
