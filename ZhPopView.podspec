@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "ZhPopView summary: 不同弹框效果" #简介
   spec.description  = "ZhPopView description: 不同弹框效果" #描述
   spec.homepage     = "https://github.com/cornZhou/ZhPopView" #项目主页，不是git地址
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" } #开源协议
+  spec.license      = { :type => "MIT", :file => "LICENSE" } #开源协议
   spec.author             = { "ZhouHuan" => "1559960608@qq.com" } #作者
   spec.platform     = :ios, "7.0" #支持的平台和版本号
   spec.source       = { :git => "https://github.com/cornZhou/ZhPopView.git", :tag => "0.0.1" } #存储库的git地址，以及tag值
