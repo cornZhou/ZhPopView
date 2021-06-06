@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   # 如果只需要加载某个子文件夹目录下的文件, 一定要逐级添加
   # spec.source_files  = "xxx", "xxx/obj/*.{h,m}"
 
-  spec.source_files  = "ZhPopView/*.{h,m}" #需要托管的源代码路径
+  spec.source_files  = "ZhPopView/**/*.{h,m}" #需要托管的源代码路径
   spec.requires_arc = true #是否支持ARC
   # s.dependency "Masonry", "~> 1.0.0"    #所依赖的第三方库，没有就不用写
   # spec.exclude_files = "Classes/Exclude"
