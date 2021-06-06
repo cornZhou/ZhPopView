@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
   # spec.source_files  = "xxx", "xxx/obj/*.{h,m}"
 
   spec.source_files  = "Classes", "ZhPopView/*.{h,m}" #需要托管的源代码路径
-  s.requires_arc = true #是否支持ARC
+  spec.requires_arc = true #是否支持ARC
   # s.dependency "Masonry", "~> 1.0.0"    #所依赖的第三方库，没有就不用写
   # spec.exclude_files = "Classes/Exclude"
 
